@@ -1,26 +1,26 @@
-import React from "react";
-import { useCallback, useState, useRef } from "react";
-import Notification from "./Notification";
+import React from 'react';
+import { useCallback, useState, useRef } from 'react';
+import Notification from './Notification';
 
 // Define the properties for the Notification component
 interface NotificationProps {
-  type?: "success" | "info" | "warning" | "error" | "custom";
+  type?: 'success' | 'info' | 'warning' | 'error' | 'custom';
   message: string | JSX.Element;
   duration?: number;
   position?: string;
   onClose?: () => void;
   animation?:
-    | "fade"
-    | "pop"
-    | "slide-t-b"
-    | "slide-b-t"
-    | "slide-l-r"
-    | "slide-r-l";
+    | 'fade'
+    | 'pop'
+    | 'slide-t-b'
+    | 'slide-b-t'
+    | 'slide-l-r'
+    | 'slide-r-l';
   id?: number;
 }
 
 // Custom hook for managing notifications
-const useNotification = (defaultPosition: string = "top-right") => {
+const useNotification = (defaultPosition: string = 'top-right') => {
   // State to store the list of notifications
   const [notifications, setNotifications] = useState<NotificationProps[]>([]);
 
