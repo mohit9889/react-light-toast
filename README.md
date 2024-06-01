@@ -60,29 +60,29 @@ You can customize the notification styles by modifying the notification.css file
 
 ### CSS Classes
 
-- .notification: Base class for notifications.
-- .success: Class for success notifications.
-- .info: Class for info notifications.
-- .warning: Class for warning notifications.
-- .error: Class for error notifications.
-- .custom: Class for custom notifications.
-- .closeBtn: Class for the close button.
-- .notification-container: Base class for the notification container.
-- .notification-container.top-right: Class for top-right container.
-- .notification-container.top-left: Class for top-left container.
-- .notification-container.top-center: Class for top-center container.
-- .notification-container.bottom-right: Class for bottom-right container.
-- .notification-container.bottom-left: Class for bottom-left container.
-- .notification-container.bottom-center: Class for bottom-center container.
+- **.notification**: Base class for notifications.
+- **.success**: Class for success notifications.
+- **.info**: Class for info notifications.
+- **.warning**: Class for warning notifications.
+- **.error**: Class for error notifications.
+- **.custom**: Class for custom notifications.
+- **.closeBtn**: Class for the close button.
+- **.notification-container**: Base class for the notification container.
+- **.notification-container.top-right**: Class for top-right container.
+- **.notification-container.top-left**: Class for top-left container.
+- **.notification-container.top-center**: Class for top-center container.
+- **.notification-container.bottom-right**: Class for bottom-right container.
+- **.notification-container.bottom-left**: Class for bottom-left container.
+- **.notification-container.bottom-center**: Class for bottom-center container.
 
 Animations
 
-- .fade: Fade in/out animation.
-- .pop: Pop in/out animation.
-- .slide-t-b: Slide from top to bottom animation.
-- .slide-b-t: Slide from bottom to top animation.
-- .slide-l-r: Slide from left to right animation.
-- .slide-r-l: Slide from right to left animation.
+- **.fade**: Fade in/out animation.
+- **.pop**: Pop in/out animation.
+- **.slide-t-b**: Slide from top to bottom animation.
+- **.slide-b-t**: Slide from bottom to top animation.
+- **.slide-l-r**: Slide from left to right animation.
+- **.slide-r-l**: Slide from right to left animation.
 
 # License
 

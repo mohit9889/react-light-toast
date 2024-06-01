@@ -55,5 +55,8 @@
     "url": "https://github.com/mohit9889/react-light-toast/issues"
   },
   "license": "MIT",
-  "documentation": "README.md"
+  "documentation": "README.md",
+  "dependencies": {
+    "react-icons": "^5.2.1"
+  }
 }
