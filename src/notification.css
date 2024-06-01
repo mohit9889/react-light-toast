@@ -1,0 +1,211 @@
+.notification {
+  padding: 15px;
+  margin: 10px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
+  opacity: 1;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.success {
+  background-color: #4caf50;
+}
+.info {
+  background-color: #2196f3;
+}
+.warning {
+  background-color: #ff9800;
+}
+.error {
+  background-color: #f44336;
+}
+.custom {
+  background-color: #fff;
+  color: #333;
+}
+
+.closeBtn {
+  margin-left: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.notification-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.notification-container.top-center {
+  top: 20px;
+}
+
+.notification-container.bottom-center {
+  bottom: 20px;
+}
+
+.notification-container.top-right {
+  top: 20px;
+  right: 20px;
+  align-items: flex-end;
+}
+
+.notification-container.top-left {
+  top: 20px;
+  left: 20px;
+  align-items: flex-start;
+}
+
+.notification-container.bottom-right {
+  bottom: 20px;
+  right: 20px;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+}
+
+.notification-container.bottom-left {
+  bottom: 20px;
+  left: 20px;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}
+
+/* Animation styles */
+.fade {
+  animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.pop {
+  animation: popIn 0.5s, popOut 0.5s 2.5s;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes popOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.slide-t-b {
+  animation: slideInTB 0.5s, slideOutTB 0.5s 2.5s;
+}
+
+@keyframes slideInTB {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutTB {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.slide-b-t {
+  animation: slideInBT 0.5s, slideOutBT 0.5s 2.5s;
+}
+
+@keyframes slideInBT {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutBT {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.slide-l-r {
+  animation: slideInLR 0.5s, slideOutLR 0.5s 2.5s;
+}
+
+@keyframes slideInLR {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutLR {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-r-l {
+  animation: slideInRL 0.5s, slideOutRL 0.5s 2.5s;
+}
+
+@keyframes slideInRL {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRL {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
